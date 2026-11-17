@@ -10,6 +10,8 @@
   </head>
   
   <body>
+    <div id="name"></div>
+    
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
@@ -62,10 +64,18 @@
                     <input type="text" id="messageinput" />
                     </label>
                 </fieldset>
-          <input type="submit" value="Submit"
+          <input type="submit" value="Submit">
         </form>
       </section>
       
     </main>
+    <script>
+      var name = prompt("What is your name?");
+      
+      alert("Welcome, " + name + "!");
+      
+      document.getElementById("name").innerText = "hello, " + name + "!";
+      
+    </script>
   </body>
 </html>
